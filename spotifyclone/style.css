@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.left{
+    width: 25vw;
+    padding: 10px;
+    max-height: 95vh;
+}
+.right{
+    width: 75vw;
+    margin: 20px;
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.home{
+    padding: 10px;
+}
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    list-style: none;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.heading img{
+    width: 20px;
+}
+.library{
+    min-height: 77vh;
+    position: relative;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+}
+.footer a{
+    color: grey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+.header > *{
+    padding: 20px;
+}
+.spotifyPlayLists{
+    padding: 16px;
+}
+.cardcontainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 95vh;
+    overflow-y: scroll;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #252525;
+}
+.card > *{
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+    align-self: center;
+}
+.play{
+    position: absolute;
+    top: 170px;
+    right: 17px;
+    width: 50px; 
+    height: 50px;
+    opacity: 0%;
+    transition: all 0.5s;
+}
+.card:hover{
+    .play{
+        opacity: 100%;
+        top: 150px; 
+        transition: all 0.5s;
+    }
+}
+.signup{
+    background-color: rgb(34, 34, 34);
+    color: rgb(167, 167, 167);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.signup:hover{
+    color: white;
+    font-size: 1.01rem;
+    font-size: 17px;
+}
+.buttons > *{
+    margin: 0px 12px;
+}
+.login{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    width: 79px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px
+}
+.login:hover{
+    font-size: 17px;
+    font-weight: bold;
+}
