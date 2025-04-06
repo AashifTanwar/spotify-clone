@@ -14,10 +14,12 @@ body{
     max-height: 95vh;
 }
 .right{
+    position: relative;
     width: 75vw;
     margin: 20px;
     max-height: 95vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .home ul li{
     display: flex;
@@ -144,4 +146,25 @@ body{
 .login:hover{
     font-size: 17px;
     font-weight: bold;
+}
+.playbar{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(12, 128, 12);
+    width: 100%;
+    padding: 12px;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.songbuttons > *{
+    width: 40px;
+}
+.songlist{
+    padding: 0 42px;
+}
+.songlist ul li{
+    list-style-type: decimal;
 }
